@@ -15,3 +15,6 @@ jobs:
       run: pip install -r requirements.txt
     - name: Run a code
       run: python src/main.py
+      env:
+        TARGET_ID: ${{ secrets.TARGET_ID }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
