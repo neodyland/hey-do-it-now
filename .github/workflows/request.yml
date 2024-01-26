@@ -1,0 +1,17 @@
+name: Notice to channel
+
+on:
+  schedule:
+    - cron: 0 3 * * *
+  workflow_dispatch:
+
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+    - name: Install requirements
+      run: pip install -r requirements.txt
+    - name: Run a code
+      run: python src/main.py
