@@ -17,4 +17,4 @@ jobs:
       run: python src/main.py
       env:
         TARGET_ID: ${{ secrets.TARGET_ID }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        DISCORD_WEBHOOK_URI: ${{ secrets.DISCORD_WEBHOOK_URI }}
