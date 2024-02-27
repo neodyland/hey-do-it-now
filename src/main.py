@@ -1,6 +1,7 @@
 import dotenv
 import requests
 from os import getenv
+import random
 
 
 def main() -> None:
