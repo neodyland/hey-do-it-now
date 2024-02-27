@@ -7,7 +7,7 @@ import random
 def main() -> None:
     with open("src/messages.txt", "r") as f:
         contents = f.readlines()
-    content = random.choices(contents)
+    content = random.choice(contents)
     dotenv.load_dotenv()
     r = requests.post(getenv("DISCORD_WEBHOOK_URI"), json={
         "content": "<@{userid}> {content}".format(userid=getenv("TARGET_ID"), content=content)
