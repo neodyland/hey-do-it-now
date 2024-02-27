@@ -5,7 +5,7 @@ import random
 
 
 def main() -> None:
-    with open("./messages.txt", "r") as f:
+    with open("src/messages.txt", "r") as f:
         contents = f.readlines()
     content = random.choices(contents)
     dotenv.load_dotenv()
