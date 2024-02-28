@@ -10,7 +10,8 @@ def main() -> None:
     content = random.choice(contents)
     dotenv.load_dotenv()
     r = requests.post(getenv("DISCORD_WEBHOOK_URI"), json={
-        "content": "<@{userid}> {content}".format(userid=getenv("TARGET_ID"), content=content)
+        "content": "<@{userid}> {content}".format(userid=getenv("TARGET_ID"), content=content),
+        "username": "ヒュンダイねこ"
     })
     r.raise_for_status()
 
