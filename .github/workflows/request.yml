@@ -9,7 +9,7 @@ jobs:
   do:
     strategy:
       matrix:
-        user_id: ["717028469992587315", "825979698425102346"]
+        user_id: ["717028469992587315", "825979698425102346", "723052392911863858"]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
