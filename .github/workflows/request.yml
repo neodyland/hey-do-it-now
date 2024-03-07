@@ -7,7 +7,7 @@ on:
 
 jobs:
   do:
-  　strategy:
+    strategy:
       matrix:
         user_id: ["717028469992587315", "825979698425102346"]
     runs-on: ubuntu-latest
